@@ -187,11 +187,21 @@
     <Compile Include="Migrations\201902221236227_addAdmin.Designer.cs">
       <DependentUpon>201902221236227_addAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903091731434_addedOfferTable.cs" />
+    <Compile Include="Migrations\201903091731434_addedOfferTable.Designer.cs">
+      <DependentUpon>201903091731434_addedOfferTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903091737599_addedCartAndWishListTable.cs" />
+    <Compile Include="Migrations\201903091737599_addedCartAndWishListTable.Designer.cs">
+      <DependentUpon>201903091737599_addedCartAndWishListTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Catagory.cs" />
     <Compile Include="Models\CustomerOrder.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\MyDbContext.cs" />
+    <Compile Include="Models\Offer.cs" />
     <Compile Include="Models\OrderStatus.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\PurchaseLot.cs" />
@@ -201,6 +211,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserType.cs" />
     <Compile Include="Models\ViewModel\LoginViewModel.cs" />
+    <Compile Include="Models\WishList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -274,6 +285,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902221236227_addAdmin.resx">
       <DependentUpon>201902221236227_addAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903091731434_addedOfferTable.resx">
+      <DependentUpon>201903091731434_addedOfferTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903091737599_addedCartAndWishListTable.resx">
+      <DependentUpon>201903091737599_addedCartAndWishListTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
