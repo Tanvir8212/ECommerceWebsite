@@ -28,7 +28,7 @@ namespace ECommerceWebsite.Controllers.API
         [HttpPost]
         public User UserLogin(User user)
         {
-            var validUser = DbContext.Users.SingleOrDefault(a => a.PhoneNumber == user.PhoneNumber && a.Password == user.Password && a.UserTypeId == (int)eUserTyes.Admin);
+            var validUser = DbContext.Users.SingleOrDefault(a => (long)a.PhoneNumber == (long)user.PhoneNumber && a.Password == user.Password && a.UserTypeId == (int)eUserTyes.Admin);
 
             if (validUser != null)
             {

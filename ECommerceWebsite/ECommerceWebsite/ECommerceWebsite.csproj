@@ -207,11 +207,34 @@
     <Compile Include="Migrations\201903141051005_userLong.Designer.cs">
       <DependentUpon>201903141051005_userLong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903141105259_cartTableEdited.cs" />
+    <Compile Include="Migrations\201903141105259_cartTableEdited.Designer.cs">
+      <DependentUpon>201903141105259_cartTableEdited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141121570_itemTableEdited.cs" />
+    <Compile Include="Migrations\201903141121570_itemTableEdited.Designer.cs">
+      <DependentUpon>201903141121570_itemTableEdited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141124191_itemTableEdited1.cs" />
+    <Compile Include="Migrations\201903141124191_itemTableEdited1.Designer.cs">
+      <DependentUpon>201903141124191_itemTableEdited1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141139352_itemTableEdited2.cs" />
+    <Compile Include="Migrations\201903141139352_itemTableEdited2.Designer.cs">
+      <DependentUpon>201903141139352_itemTableEdited2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141144334_itemTableEdited3.cs" />
+    <Compile Include="Migrations\201903141144334_itemTableEdited3.Designer.cs">
+      <DependentUpon>201903141144334_itemTableEdited3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141424578_modifiedDatabase.cs" />
+    <Compile Include="Migrations\201903141424578_modifiedDatabase.Designer.cs">
+      <DependentUpon>201903141424578_modifiedDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Catagory.cs" />
     <Compile Include="Models\CustomerOrder.cs" />
-    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\MyDbContext.cs" />
     <Compile Include="Models\Offer.cs" />
     <Compile Include="Models\OrderStatus.cs" />
@@ -312,6 +335,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903141051005_userLong.resx">
       <DependentUpon>201903141051005_userLong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141105259_cartTableEdited.resx">
+      <DependentUpon>201903141105259_cartTableEdited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141121570_itemTableEdited.resx">
+      <DependentUpon>201903141121570_itemTableEdited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141124191_itemTableEdited1.resx">
+      <DependentUpon>201903141124191_itemTableEdited1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141139352_itemTableEdited2.resx">
+      <DependentUpon>201903141139352_itemTableEdited2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141144334_itemTableEdited3.resx">
+      <DependentUpon>201903141144334_itemTableEdited3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141424578_modifiedDatabase.resx">
+      <DependentUpon>201903141424578_modifiedDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

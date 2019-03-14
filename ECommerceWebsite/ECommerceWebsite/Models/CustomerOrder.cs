@@ -13,11 +13,10 @@ namespace ECommerceWebsite.Models
         [Key]
         public int Id { get; set; }
 
-        public List<Item> Items { get; set; }
+        public long CartId { get; set; }
 
         public double TotalPrice { get; set; }
 
-      
 
         public virtual User Customer { get; set; }
 

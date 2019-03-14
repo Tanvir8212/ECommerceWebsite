@@ -13,7 +13,7 @@ namespace ECommerceWebsite.Models
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Catagory> Catagories { get; set; }
         public DbSet<CustomerOrder> CustomerOrders { get; set; }
-        public DbSet<Item> Items { get; set; }
+        //public DbSet<Item> Items { get; set; }
         public DbSet<OrderStatus> OrderStatuses { get; set; }
         public DbSet<PurchaseLot> PurchaseLots { get; set; }
         public DbSet<QuantityType> QuantityTypes { get; set; }
