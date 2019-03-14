@@ -16,6 +16,9 @@ namespace ECommerceWebsite.Models
         
         public String Password { get; set; }
 
+        [ForeignKey("UserType")]
+        public int UserTypeId { get; set; }
+
         public UserType UserType { get; set; }
 
     }

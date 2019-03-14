@@ -166,6 +166,7 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\API\ApiMethodController.cs" />
     <Compile Include="Controllers\API\CategoryController.cs" />
+    <Compile Include="Controllers\API\LoginController.cs" />
     <Compile Include="Controllers\API\ProductController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -197,6 +198,14 @@
     <Compile Include="Migrations\201903091737599_addedCartAndWishListTable.cs" />
     <Compile Include="Migrations\201903091737599_addedCartAndWishListTable.Designer.cs">
       <DependentUpon>201903091737599_addedCartAndWishListTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903111825081_addedForeignKey.cs" />
+    <Compile Include="Migrations\201903111825081_addedForeignKey.Designer.cs">
+      <DependentUpon>201903111825081_addedForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141051005_userLong.cs" />
+    <Compile Include="Migrations\201903141051005_userLong.Designer.cs">
+      <DependentUpon>201903141051005_userLong.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -297,6 +306,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903091737599_addedCartAndWishListTable.resx">
       <DependentUpon>201903091737599_addedCartAndWishListTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903111825081_addedForeignKey.resx">
+      <DependentUpon>201903111825081_addedForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141051005_userLong.resx">
+      <DependentUpon>201903141051005_userLong.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -11,9 +12,13 @@ namespace ECommerceWebsite.Models
         [Key]
         public int Id { get; set; }
 
-        public CustomerOrder CustomerOrder { get; set; }
+        [ForeignKey("CustomerOrder")]
+        public int CustomerOrderId { get; set; }
 
-        public User DeliveryMan { get; set; }
+        public virtual CustomerOrder CustomerOrder { get; set; }
+
+       
+        public virtual User DeliveryMan { get; set; }
 
         public DateTime DateTime { get; set; }
 
