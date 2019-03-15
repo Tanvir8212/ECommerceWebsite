@@ -10,10 +10,11 @@ namespace ECommerceWebsite.Models
     public class User
     {
         [Key]
-        [Display(Name ="Phone Number")]
-        public long PhoneNumber { get; set; }
+        public long Id { get; set; }
 
-        
+        [Display(Name = "Phone Number")]
+        public String PhoneNumber { get; set; }
+
         public String Password { get; set; }
 
         [ForeignKey("UserType")]

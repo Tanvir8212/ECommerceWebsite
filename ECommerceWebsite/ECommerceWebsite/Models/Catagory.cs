@@ -13,6 +13,5 @@ namespace ECommerceWebsite.Models
 
         [Display(Name ="Catagory Name")]
         public String Name { get; set; }
-
     }
 }

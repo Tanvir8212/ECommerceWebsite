@@ -165,9 +165,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\API\ApiMethodController.cs" />
+    <Compile Include="Controllers\API\CartController.cs" />
     <Compile Include="Controllers\API\CategoryController.cs" />
     <Compile Include="Controllers\API\LoginController.cs" />
     <Compile Include="Controllers\API\ProductController.cs" />
+    <Compile Include="Controllers\API\SignUpController.cs" />
+    <Compile Include="Controllers\API\UserController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -231,6 +234,38 @@
     <Compile Include="Migrations\201903141424578_modifiedDatabase.Designer.cs">
       <DependentUpon>201903141424578_modifiedDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903141433420_userIdStopAutoIncrement.cs" />
+    <Compile Include="Migrations\201903141433420_userIdStopAutoIncrement.Designer.cs">
+      <DependentUpon>201903141433420_userIdStopAutoIncrement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141436472_identity_insert_on_user.cs" />
+    <Compile Include="Migrations\201903141436472_identity_insert_on_user.Designer.cs">
+      <DependentUpon>201903141436472_identity_insert_on_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141501332_UserIdIdentity.cs" />
+    <Compile Include="Migrations\201903141501332_UserIdIdentity.Designer.cs">
+      <DependentUpon>201903141501332_UserIdIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141504104_UserIdIdentity1.cs" />
+    <Compile Include="Migrations\201903141504104_UserIdIdentity1.Designer.cs">
+      <DependentUpon>201903141504104_UserIdIdentity1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141514021_UserPrimaryKeyChanged.cs" />
+    <Compile Include="Migrations\201903141514021_UserPrimaryKeyChanged.Designer.cs">
+      <DependentUpon>201903141514021_UserPrimaryKeyChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141518508_UserPrimaryKeyChanged1.cs" />
+    <Compile Include="Migrations\201903141518508_UserPrimaryKeyChanged1.Designer.cs">
+      <DependentUpon>201903141518508_UserPrimaryKeyChanged1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141648396_modifiedCart.cs" />
+    <Compile Include="Migrations\201903141648396_modifiedCart.Designer.cs">
+      <DependentUpon>201903141648396_modifiedCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141653491_modifiedCart1.cs" />
+    <Compile Include="Migrations\201903141653491_modifiedCart1.Designer.cs">
+      <DependentUpon>201903141653491_modifiedCart1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Catagory.cs" />
@@ -245,6 +280,8 @@
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserType.cs" />
+    <Compile Include="Models\ViewModel\AddToCartViewModel.cs" />
+    <Compile Include="Models\ViewModel\CartViewModel.cs" />
     <Compile Include="Models\ViewModel\LoginViewModel.cs" />
     <Compile Include="Models\WishList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -353,6 +390,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903141424578_modifiedDatabase.resx">
       <DependentUpon>201903141424578_modifiedDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141433420_userIdStopAutoIncrement.resx">
+      <DependentUpon>201903141433420_userIdStopAutoIncrement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141436472_identity_insert_on_user.resx">
+      <DependentUpon>201903141436472_identity_insert_on_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141501332_UserIdIdentity.resx">
+      <DependentUpon>201903141501332_UserIdIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141504104_UserIdIdentity1.resx">
+      <DependentUpon>201903141504104_UserIdIdentity1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141514021_UserPrimaryKeyChanged.resx">
+      <DependentUpon>201903141514021_UserPrimaryKeyChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141518508_UserPrimaryKeyChanged1.resx">
+      <DependentUpon>201903141518508_UserPrimaryKeyChanged1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141648396_modifiedCart.resx">
+      <DependentUpon>201903141648396_modifiedCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141653491_modifiedCart1.resx">
+      <DependentUpon>201903141653491_modifiedCart1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

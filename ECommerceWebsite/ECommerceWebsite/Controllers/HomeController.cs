@@ -53,14 +53,14 @@ namespace ECommerceWebsite.Controllers
 
                 if (foundUser != null)
                 {
-                    if(foundUser.UserType.Id == (int)eUserTyes.Admin)
+                    if (foundUser.UserType.Id == (int)eUserTyes.Admin)
                     {
                         Session["loggedIn"] = "True";
-                        return RedirectToAction("Index","Admin");
+                        return RedirectToAction("Index", "Admin");
                     }
                 }
             }
-            
+
             return View();
         }
 

@@ -19,17 +19,29 @@ namespace ECommerceWebsite.Controllers.API
 
 
         [HttpGet]
-        [Route("Product/getAllProducts")]
+        
         public List<Product> getAllProducts()
         {
             return DbContext.Products.ToList();
         }
 
         [HttpGet]
-        [Route("Product/getProductBySubCategory")]
         public List<Product> getProductBySubCategory(SubCatagory subCatagory)
         {
             return DbContext.Products.Where(p => p.SubCatagory == subCatagory).ToList();
+        }
+
+        [HttpGet]
+        public List<Product> searchProduct(String name)
+        {
+            var foundProducts = DbContext.Products.Where(a => a.Name.Contains(name)).ToList();
+
+            if (foundProducts.Any())
+            {
+                return foundProducts;
+            }
+            return null;
+
         }
 
     }
